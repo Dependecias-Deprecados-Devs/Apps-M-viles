@@ -11,7 +11,7 @@ Repo de las vaians de apps móviles
 
 ```
 <application
-        android:name=".MyApplication"   <--- si se genera otro archivo al mismo nivel del MyApplication.kt
+        android:name=".MyApplication"   <--- si se genera otro archivo al mismo nivel del MainActivity.kt
 </application>
 ```
 
