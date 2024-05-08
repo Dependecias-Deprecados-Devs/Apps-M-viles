@@ -1,6 +1,12 @@
 # Apps-Móviles
 Repo de las vaians de apps móviles
 
+## PERMISOS
+
+### INTERNET
+
+`<uses-permission android:name="android.permission.INTERNET"/>`
+
 ## IMPLEMENTACIONES
 
 ### retrofit
