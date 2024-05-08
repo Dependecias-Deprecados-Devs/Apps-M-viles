@@ -7,6 +7,14 @@ Repo de las vaians de apps móviles
 
 `<uses-permission android:name="android.permission.INTERNET"/>`
 
+### Agregar otro archivo de aplicacion
+
+```
+<application
+        android:name=".MyApplication"   <--- si se genera otro archivo al mismo nivel del MyApplication.kt
+</application>
+```
+
 ## IMPLEMENTACIONES
 
 ### retrofit
@@ -97,8 +105,23 @@ Repo de las vaians de apps móviles
 
 ***libs.versions.toml***
 
+
 * [versions]
 
 * [libraries]
 
   `androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }`
+
+  ### persistencia
+
+***build.gradle.kts***
+
+```
+plugins {
+    id("kotlin-kapt")
+}
+```
+
+* Debajo de anotationProcessor
+
+  `kapt(libs.androidx.room.compiler)`
